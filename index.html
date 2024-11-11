@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario</title>
 </head>
+    
 <body>
     <header>
      <h1>Cadastre-se</h1>
@@ -12,20 +13,103 @@
     </header>
 
     <main>
+        
         <form action="">
-<fieldset>
-    <legend>Preencha os campos</legend>
-    <div>
-        <label for="nome">Nome:</label> <!--entiquetas-->
-        <input type="text" name="nome" id="nome" placeholder="escreva seu nome"/>
-    </div>
-   <div>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" placeholder="Escreva seu email"/>
-   </div>
-   
+            
+     <fieldset>
+        <legend>Preencha os campos</legend>
+        
+            <div>
+                
+                <label for="nome">Nome:</label> <!--entiquetas-->
+                <input type="text" name="nome" id="nome" placeholder="escreva seu nome"/>
+                
+            </div>
+    
+            <div>
+                
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Escreva seu email"/>
+                
+            </div>
+        
+             <div>
 
-</fieldset>
+                <label for="telefone">Telefone</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone"/>
+
+            </div>
+
+            <div>
+                <label for="estados">Estado</label>
+
+                <select> 
+
+                    <option value="AC">AC</option>
+                    <option value="SP">SP</option>
+                    <option value="RJ">RJ</option>
+                    
+                </select>
+            </div>   
+        </fieldset>
+            
+        <fieldset>
+
+            <legend>informações</legend>
+            <label for="site">Site</label>
+            <input type="url" id="site" name="site"/>
+
+            <label for="senha">Senha</label>
+            <input type="password" name="Senha" id="senha" placeholder="Digite sua senha"/>
+
+            <label for="Nascimento">Data de nascimento:</label>
+            <input type="date" name="Nascimento" id="Nascimento">
+
+        </fieldset>
+
+        <fieldset>
+            <!--checked especifica que um elemento deve ser pré-selecionado (marcado) quando a página for carregada-->
+
+            <input type="checkbox" name="autorização" checked/>
+            <label for="autorização">Concordo que utilizem meus dados bancários e espalhem na internet</label>
+
+            <p>
+                O uso de nosso site e aplicativo é regulado por nossos termos de
+                uso. Maiores informaçãos sobre como usamos seus dados pessoais podem
+                ser encontradas em nossa Política de Privacidade e Política de
+                cookies.
+            </p>
+
+            <label for="Documento">Documento PDF:</label>
+            <input type="file" id="Documento" name="documento" accept="Document/pdf"/>
+
+        </fieldset>
+
+        <fieldset>
+            
+            <img src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png" alt="" width="100"/>
+
+            <!--O input do tipo radio serve para selecionar apenas uma opção, eles precisam trabalhar em grupo, e esse grupo é separado através do atributo name, precisa ter o mesmo name para todos. -->
+
+            <input type="radio" name="robo" id="sourobo"/>
+            <label for="sim">Sou um robô</label>
+
+            <input type="radio" name="robo" id="naosourobo"/>
+            <label for="nao">Não sou um robô</label>
+
+            <input type="radio" name="robo" id="talvezeuseja"/>
+            <label for="talvez">Talvez eu seja um robô</label>
+
+            <input type="submit" value="Enviar"/>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Resetar</button>
+            <button type="button">Padrão</button>
+            <button>Enviar</button>
+
+
+        </fieldset>
+
 
         </form>
     </main>
